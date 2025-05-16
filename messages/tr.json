@@ -33,7 +33,8 @@
     "email": "Email",
     "allRightsReserved": "Tüm hakları saklıdır",
     "privacyPolicy": "Gizlilik Politikası",
-    "termsOfService": "Kullanım Şartları"
+    "termsOfService": "Kullanım Şartları",
+    "developedBy": "Web sitesi geliştiricisi: {creatorName}"
   },
   "AboutPage": {
     "pageTitle": "Hakkımızda - Ekstrem Packaging",
@@ -41,115 +42,170 @@
     "title": "Hakkımızda",
     "subTitle": "Ekstrem Packaging'i Tanıyın",
     "contactInformation": "İletişim Bilgilerimiz",
-    "companyName": "Firma Adı",
-    "web": "Web"
+    "additionalInfo": "Ekstrem Packaging olarak, kağıt ambalaj sektöründe sürekli gelişim ve yeniliğe bağlıyız. Kaliteli ürünler, güvenilir hizmet ve sürdürülebilir uygulamalarla müşteri beklentilerini aşmayı hedefliyoruz. Kendini işine adamış ekibimiz, yalnızca etkili değil, aynı zamanda çevreye duyarlı çözümler sunarak daha yeşil bir geleceğe katkıda bulunmak için özenle çalışmaktadır.",
+    "logoAlt": "Ekstrem Packaging Detaylı Logo",
+    "companyNameLabel": "Firma Adı",
+    "addressLabel": "Adres",
+    "phoneLabel": "Telefon",
+    "faxLabel": "Fax",
+    "emailLabel": "E-posta",
+    "webLabel": "Web"
   },
   "FeaturesSection": {
-    "mainTitle": "Our Prominent Features",
-    "subTitle": "Why Ekstrem Packaging?",
-    "advancedInfrastructureTitle": "Our Advanced Production Infrastructure",
-    "advancedInfrastructureDescription": "We guarantee high-volume and quality production with our state-of-the-art machinery park and automation systems. Our facility is supported by extensive production and warehousing areas.",
+    "mainTitle": "Öne Çıkan Özelliklerimiz",
+    "subTitle": "Neden Ekstrem Packaging?",
+    "advancedInfrastructureTitle": "Gelişmiş Üretim Altyapımız",
+    "advancedInfrastructureDescription": "Son teknoloji makine parkurumuz ve otomasyon sistemlerimiz ile yüksek hacimli ve kaliteli üretimi garanti ediyoruz. Tesisimiz, geniş üretim ve depolama alanlarıyla desteklenmektedir.",
     "features": {
       "peCoating": {
-        "name": "High-Capacity PE Coating",
-        "description": "Monthly production capacity of 3000 tons of polyethylene coating and raw material with 2 machines."
+        "name": "Yüksek Kapasiteli PE Kaplama",
+        "description": "2 makine ile aylık 3000 ton polietilen kaplama ve hammadde üretim kapasitesi."
       },
       "grammageRange": {
-        "name": "Wide Grammage Range",
-        "description": "Raw material production in every grammage and size between 150 and 350 GSM."
+        "name": "Geniş Gramaj Aralığı",
+        "description": "150 ile 350 GSM arasında her gramajda ve ebatta hammadde üretimi."
       },
       "certifiedProduction": {
-        "name": "Certified Production and Standards",
-        "description": "We produce in international norms, compliant with FSC-PEFC certifications and BRC food safety standards."
+        "name": "Sertifikalı Üretim ve Standartlar",
+        "description": "FSC-PEFC sertifikalarına ve BRC gıda güvenliği standartlarına uygun, uluslararası normlarda üretim yapıyoruz."
       },
       "standardCompatibility": {
-        "name": "Standard Compatibility and Ease of Use",
-        "description": "Ekstrem Cup products are compatible with all standard lids on the market. Offers leak-proof, hygienic, and practical use."
+        "name": "Standart Uyumluluk ve Kullanım Kolaylığı",
+        "description": "Ekstrem Cup ürünleri piyasadaki tüm standart kapaklarla uyumludur. Sızdırmaz, hijyenik ve pratik kullanım sunar."
       }
     },
     "productionHighlights": {
       "wideProductRange": {
-        "title": "Wide Product Range",
-        "description": "Producing different size and weighted paper cups from 2.5 oz to 16 oz."
+        "title": "Geniş Ürün Yelpazesi",
+        "description": "2.5 oz'dan 16 oz'a kadar farklı boyut ve ağırlıklarda kağıt bardak üretimi."
       },
       "automationEfficiency": {
-        "title": "Automation and Efficiency",
-        "description": "Automatic counting-packing-boxing and plastic stretching capability."
+        "title": "Otomasyon ve Verimlilik",
+        "description": "Otomatik sayma-paketleme-kolileme ve plastik streçleme kabiliyeti."
       },
       "highProductionCapacity": {
-        "title": "High Production Capacity",
-        "description": "Almost 8 million cups per day capacity with 75+ paper cup machines."
+        "title": "Yüksek Üretim Kapasitesi",
+        "description": "75+ kağıt bardak makinesi ile günlük yaklaşık 8 milyon bardak kapasitesi."
       },
       "modernFacility": {
-        "title": "Modern Facility Infrastructure",
-        "description": "Our total 16,000 m² factory area consists of a 4,000 m² production section and a 12,000 m² warehousing section."
+        "title": "Modern Tesis Altyapısı",
+        "description": "Toplam 16.000 m² fabrika alanımız, 4.000 m² üretim ve 12.000 m² depolama bölümünden oluşmaktadır."
       }
     },
-    "imageAltProductionLine": "Ekstrem Packaging Factory Production Line and Machine Detail"
+    "imageAltProductionLine": "Ekstrem Packaging Fabrikası Üretim Hattı ve Makine Detayı"
   },
   "ProductsPreviewSection": {
-    "mainTitle": "Our Product Categories",
-    "subTitle": "Discover Our Wide Product Range",
-    "description": "We offer quality and eco-friendly packaging for all your needs, from paper cups to bowls, plates to custom solutions.",
+    "mainTitle": "Ürün Kategorilerimiz",
+    "subTitle": "Geniş Ürün Yelpazemizi Keşfedin",
+    "description": "Kağıt bardaklardan kaselere, tabaklardan özel çözümlere kadar tüm ihtiyaçlarınız için kaliteli ve çevre dostu ambalajlar sunuyoruz.",
     "categories": {
       "cups": {
-        "name": "Paper Cups",
-        "description": "Eco-friendly paper cups in various sizes, ideal for coffee, tea, and cold beverages.",
-        "alt": "Paper Cups Category"
+        "name": "Kağıt Bardaklar",
+        "description": "Kahve, çay ve soğuk içecekler için ideal, çeşitli boyutlarda çevre dostu kağıt bardaklar.",
+        "alt": "Kağıt Bardak Kategorisi"
       },
       "bowls": {
-        "name": "Paper Bowls",
-        "description": "Practical and stylish paper bowls for ice cream, soup, noodles, and other foods.",
-        "alt": "Paper Bowls Category"
+        "name": "Kağıt Kaseler",
+        "description": "Dondurma, çorba, noodle ve diğer yiyecekler için pratik ve şık kağıt kaseler.",
+        "alt": "Kağıt Kase Kategorisi"
       },
       "plates": {
-        "name": "Paper Plates",
-        "description": "Natural and durable paper plates in different sizes, suitable for all kinds of meals.",
-        "alt": "Paper Plates Category"
+        "name": "Kağıt Tabaklar",
+        "description": "Her türlü yemek için uygun, farklı boyutlarda doğal ve dayanıklı kağıt tabaklar.",
+        "alt": "Kağıt Tabak Kategorisi"
       }
     },
-    "viewDetails": "View Details",
-    "viewAllProducts": "Browse All Our Products"
+    "viewDetails": "Detayları Görüntüle",
+    "viewAllProducts": "Tüm Ürünlerimizi İnceleyin"
   },
   "QualityAndSustainabilitySection": {
-    "mainTitle": "Our Quality and Assurance",
-    "subTitle": "Our Sustainability and Standards",
-    "intro": "We are committed to providing our customers with the highest quality, safe, and environmentally friendly products. Our production processes are supported by internationally recognized standards and certifications.",
-    "productFeaturesTitle": "Our Product Features",
-    "imageAltQualityControl": "Ekstrem Cup Quality Control",
-    "certificationsTitle": "Our International Certifications",
-    "certificationsIntro": "Our quality and reliability standards are registered with internationally valid certifications.",
+    "mainTitle": "Kalite ve Güvencemiz",
+    "subTitle": "Sürdürülebilirlik ve Standartlarımız",
+    "intro": "Müşterilerimize en yüksek kalitede, güvenli ve çevre dostu ürünler sunmayı taahhüt ediyoruz. Üretim süreçlerimiz uluslararası kabul görmüş standartlar ve sertifikalarla desteklenmektedir.",
+    "productFeaturesTitle": "Ürün Özelliklerimiz",
+    "imageAltQualityControl": "Ekstrem Cup Kalite Kontrol",
+    "certificationsTitle": "Uluslararası Sertifikalarımız",
+    "certificationsIntro": "Kalite ve güvenilirlik standartlarımız uluslararası geçerliliğe sahip sertifikalarla tescillenmiştir.",
     "qualityPoints": {
       "hygienic": {
-        "title": "Hygienic and Food Safe",
-        "description": "Our Ekstrem Cup products are hygienic, practical, and economical solutions that are perfectly safe for contact with food."
+        "title": "Hijyenik ve Gıdaya Uygun",
+        "description": "Ekstrem Cup ürünlerimiz, gıda ile teması tamamen güvenli, hijyenik, pratik ve ekonomik çözümlerdir."
       },
       "leakProof": {
-        "title": "High Quality and Leak-Proof",
-        "description": "Our products are made with high-quality materials and are guaranteed to be leak-proof, offering a reliable user experience."
+        "title": "Yüksek Kaliteli ve Sızdırmaz",
+        "description": "Ürünlerimiz yüksek kaliteli malzemelerden üretilmiş olup sızdırmazlık garantisiyle güvenilir bir kullanıcı deneyimi sunar."
       },
       "ecoFriendly": {
-        "title": "Environmentally Friendly Production",
-        "description": "Ekstrem Cup is produced according to standards that do not harm the environment. We are working towards a sustainable future."
+        "title": "Çevre Dostu Üretim",
+        "description": "Ekstrem Cup, çevreye zarar vermeyen standartlara göre üretilir. Sürdürülebilir bir gelecek için çalışıyoruz."
       }
     },
     "certifications": {
       "fsc": {
-        "name": "FSC-PEFC Certified",
-        "description": "We use FSC and PEFC certified materials, promoting responsible use of forest resources."
+        "name": "FSC-PEFC Sertifikalı",
+        "description": "Orman kaynaklarının sorumlu kullanımını teşvik eden FSC ve PEFC sertifikalı malzemeler kullanıyoruz."
       },
       "brc": {
-        "name": "BRC Standard Production",
-        "description": "We manufacture under food safety management systems compliant with BRC Global Standards."
+        "name": "BRC Standartlarında Üretim",
+        "description": "BRC Global Standartları'na uygun gıda güvenliği yönetim sistemleri altında üretim yapıyoruz."
       }
     }
   },
   "ExportMapSection": {
-    "mainTitle": "Our Global Market",
-    "subTitle": "Worldwide Export",
-    "description": "We deliver our products to customers all over the world, representing our quality in the international arena.",
-    "mapNote": "Countries marked with ● on the map are the main regions we export to.",
-    "exportedCountriesTitle": "Exported Countries",
-    "countryNameTooltip": "Country Name"
+    "mainTitle": "Küresel Pazarımız",
+    "subTitle": "Dünya Çapında İhracat",
+    "description": "Ürünlerimizi dünyanın dört bir yanındaki müşterilere ulaştırıyor, kalitemizi uluslararası arenada temsil ediyoruz.",
+    "mapNote": {
+      "beforeSpan": "Haritada",
+      "afterSpan": "ile işaretlenmiş ülkeler başlıca ihracat yaptığımız bölgelerdir."
+    },
+    "exportedCountriesTitle": "İhracat Yapılan Ülkeler",
+    "countryNameTooltip": "Ülke Adı",
+    "mapAriaLabel": "Ekstrem Packaging'in ihracat yaptığı ülkeleri gösteren dünya haritası"
+  },
+  "Metadata": {
+    "titleBase": "Ekstrem Packaging"
+  },
+  "PrivacyPolicyPage": {
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son Güncelleme: 17 Mayıs 2025"
+  },
+  "TermsOfServicePage": {
+    "title": "Hizmet Şartları",
+    "lastUpdated": "Son Güncelleme: 17 Mayıs 2025"
+  },
+  "PaperCupsPage": {
+    "metaTitle": "Karton Bardaklar - Ekstrem Packaging",
+    "metaDescription": "Ekstrem Packaging'den sıcak ve soğuk içecekler için yüksek kaliteli, özelleştirilebilir karton bardaklar. Ürün yelpazemizi keşfedin.",
+    "title": "KARTON BARDAKLAR",
+    "description": "İhtiyaçlarınız doğrultusunda, polietilen kaplı veya %100 geri dönüştürülebilir bariyerli kağıtları, zarif tasarımlarla birleştirerek, kahve, çay veya soğuk içecekler için ideal, doğal ve çevre dostu karton bardaklar üretiyoruz.",
+    "specsTitle": "Bardak Teknik Özellikleri",
+    "visualizationsTitle": "Bardak Boyutları Görselleştirme",
+    "ctaButtonText": "Bardak Siparişi ve Teklif Alın"
+  },
+  "PaperBowlsPage": {
+    "metaTitle": "Karton Kaseler - Ekstrem Packaging",
+    "metaDescription": "Ekstrem Packaging'den dondurma, çorba, noodle ve daha fazlası için çevre dostu ve çok yönlü karton kaseler.",
+    "title": "KARTON KASELER",
+    "descriptionLine1": "Karton bardakların yanı sıra dondurma, çorba, noodle veya diğer ürünler için çevre dostu karton kaseler üretiyoruz.",
+    "descriptionLine2": "Kağıt bardakların yanı sıra dondurma, çorba, noodle veya diğerleri için çeşitli boyutlarda çevre dostu kağıt kaseler üretiyoruz.",
+    "specsTitle": "Kase Teknik Özellikleri",
+    "visualizationsTitle": "Kase Boyutları Görselleştirme",
+    "ctaButtonText": "Kase Siparişi ve Teklif Alın"
+  },
+  "PaperPlatesPage": {
+    "metaTitle": "Kağıt Tabaklar - Ekstrem Packaging",
+    "metaDescription": "Ekstrem Packaging tarafından her türlü yemek için pratik, şık ve çevre dostu kağıt tabaklar.",
+    "title": "KAĞIT TABAKLAR",
+    "descriptionLine1": "Kağıt tabaklarımızla hem pratik hem de şık bir sunum yapabilirsiniz. Farklı boyut seçenekleriyle her türlü yemeğe uyum sağlar. Doğal ve dayanıklı yapısı sayesinde, çevre dostu ürünlerimizi güvenle kullanabilirsiniz.",
+    "descriptionLine2": "Kağıt tabaklarımızla pratik ve şık bir sunum yapabilirsiniz. Farklı boyut seçenekleriyle her türlü yemeğe uyum sağlar. Doğal ve dayanıklı yapısı sayesinde çevre dostu ürünlerimizi güvenle kullanabilirsiniz.",
+    "visualizationsTitle": "Tabak Boyutları Görselleştirme",
+    "ctaButtonText": "Tabak Siparişi ve Teklif Alın"
+  },
+  "ProductPageShared": {
+    "tableHeaderProduct": "Ürün",
+    "tableHeaderBottomDiameter": "Alt Çap (mm)",
+    "tableHeaderTopDiameter": "Üst Çap (mm)",
+    "tableHeaderHeight": "Yükseklik (mm)"
   }
 }

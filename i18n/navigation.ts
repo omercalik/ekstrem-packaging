@@ -1,7 +1,6 @@
+// File: omercalik/ekstrem-packaging/ekstrem-packaging-e487f92652d54e82cd3d7a93d73c5f07d5be1b0b/i18n/navigation.ts
 import { createNavigation } from "next-intl/navigation";
-import { routing } from "./routing";
+import { routing } from "./routing"; // This now uses the updated routing config (en, tr)
 
-// Lightweight wrappers around Next.js' navigation
-// APIs that consider the routing configuration
 export const { Link, redirect, usePathname, useRouter, getPathname } =
   createNavigation(routing);

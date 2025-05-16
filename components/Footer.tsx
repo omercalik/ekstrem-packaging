@@ -22,10 +22,8 @@ export default async function Footer({ locale }: { locale: string }) {
     { href: "/#our-capabilities", labelKey: "ourCapabilities" },
     { href: "/#sustainability", labelKey: "sustainability" },
     { href: "/about", labelKey: "aboutUs" },
-    { href: "/#quote", labelKey: "getAQuote" }, // Use a key from Navbar or create one in Footer
   ];
 
-  // Helper to construct localized hrefs
   const getLocalizedHref = (href: string) => {
     if (href.startsWith("/#")) {
       return `/${locale}${href}`;
@@ -36,18 +34,18 @@ export default async function Footer({ locale }: { locale: string }) {
     return href;
   };
 
+  const creatorName = "Ömer Berkan Çalık";
+  const creatorEmail = "omerbcalik@gmail.com";
+
   return (
-    <footer
-      id={locale === "tr" ? "iletisim" : "contact"}
-      className="bg-cyan-800 text-cyan-50"
-    >
+    <footer id={"contact"} className="bg-cyan-800 text-cyan-50">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:py-16">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <Link href={getLocalizedHref("/")} className="flex-shrink-0">
               <Image
                 src={companyContactData.logoUrl}
-                alt={"Ekstrem Packaging Logo"} // Add 'logoAlt' to messages if needed
+                alt={"Ekstrem Packaging Logo"}
                 width={180}
                 height={60}
                 className="object-contain"
@@ -56,7 +54,6 @@ export default async function Footer({ locale }: { locale: string }) {
             <p className="text-base text-cyan-200 leading-relaxed">
               {t("tagline")}
             </p>
-            {/* Social media icons would go here and also need localization if they have text */}
           </div>
 
           <div className="mt-12 grid grid-cols-1 gap-8 xl:mt-0 xl:col-span-2 md:grid-cols-2">
@@ -110,7 +107,6 @@ export default async function Footer({ locale }: { locale: string }) {
           <p className="text-base text-cyan-300 md:order-1 md:mt-0">
             &copy; {new Date().getFullYear()} {"Ekstrem Packaging"}.{" "}
             {t("allRightsReserved")}. ({companyContactData.legalName}){" "}
-            {/* Add companyNameBase to messages */}
           </p>
           <div className="mt-4 flex space-x-4 md:mt-0 md:order-2 text-sm">
             <Link
@@ -127,6 +123,18 @@ export default async function Footer({ locale }: { locale: string }) {
               {t("termsOfService")}
             </Link>
           </div>
+        </div>
+        <div className="mt-8 border-t border-cyan-700 pt-8 text-center">
+          <p className="text-xs text-cyan-400">
+            {t("developedBy", { creatorName: creatorName })}
+            <br />
+            <a
+              href={`mailto:${creatorEmail}`}
+              className="text-cyan-400 hover:text-orange-400 hover:underline"
+            >
+              {creatorEmail}
+            </a>
+          </p>
         </div>
       </div>
     </footer>

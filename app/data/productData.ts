@@ -161,31 +161,31 @@ export const bowlLineArt = [
   {
     id: "bowl130",
     sizeLabel: "130 cc",
-    imageUrl: "/bowls/130cc.png",
+    imageUrl: "/bowls/b1.png",
     altText: "130cc Kase Çizimi",
   },
   {
     id: "bowl260",
     sizeLabel: "260 cc",
-    imageUrl: "/bowls/260cc.png",
+    imageUrl: "/bowls/b2.png",
     altText: "260cc Kase Çizimi",
   },
   {
     id: "bowl390",
     sizeLabel: "390 cc",
-    imageUrl: "/bowls/390cc.png",
+    imageUrl: "/bowls/b3.png",
     altText: "390cc Kase Çizimi",
   },
   {
     id: "bowl470",
     sizeLabel: "470 cc",
-    imageUrl: "/bowls/470cc.png",
+    imageUrl: "/bowls/b4.png",
     altText: "470cc Kase Çizimi",
   },
   {
     id: "noodle750",
     sizeLabel: "750 cc (Noodle Box)",
-    imageUrl: "/bowls/750cc-noodle.png",
+    imageUrl: "/bowls/b5.png",
     altText: "750cc Noodle Kutusu Çizimi",
   },
 ];
@@ -194,25 +194,25 @@ export const plateLineArt = [
   {
     id: "plate15x25",
     sizeLabel: "15x25 cm",
-    imageUrl: "/plates/15x25cm.png",
+    imageUrl: "/plates/p1.png",
     altText: "15x25cm Tabak Çizimi",
   },
   {
     id: "plate18",
     sizeLabel: "18 cm",
-    imageUrl: "/plates/18cm.png",
+    imageUrl: "/plates/p2.png",
     altText: "18cm Tabak Çizimi",
   },
   {
     id: "plate20",
     sizeLabel: "20 cm",
-    imageUrl: "/plates/20cm.png",
+    imageUrl: "/plates/p3.png",
     altText: "20cm Tabak Çizimi",
   },
   {
     id: "plate22",
     sizeLabel: "22 cm",
-    imageUrl: "/plates/22cm.png",
+    imageUrl: "/plates/p4.png",
     altText: "22cm Tabak Çizimi",
   },
 ];

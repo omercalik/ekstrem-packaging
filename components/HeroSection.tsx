@@ -21,7 +21,7 @@ export default async function HeroSection({ locale }: { locale: string }) {
 
   return (
     <section
-      id={locale === "tr" ? "ana-sayfa" : "home"} // Localized ID for in-page scroll
+      id={"home"} // Localized ID for in-page scroll
       className="bg-orange-50 py-20 md:py-24 lg:py-32"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,7 +58,7 @@ export default async function HeroSection({ locale }: { locale: string }) {
           <div className="flex w-full items-center justify-center md:w-1/2 lg:w-2/5">
             <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
               <Image
-                src="/images/company/custom_cups_showcase.jpg" // Make sure this image exists
+                src="/cup1.jpg" // Make sure this image exists
                 alt={t("titleMain") + " " + t("titleSpan")}
                 width={500}
                 height={700}

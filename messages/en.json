@@ -33,7 +33,8 @@
     "email": "Email",
     "allRightsReserved": "All rights reserved",
     "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "termsOfService": "Terms of Service",
+    "developedBy": "Website developed by {creatorName}"
   },
   "AboutPage": {
     "pageTitle": "About Us - Ekstrem Packaging",
@@ -41,7 +42,170 @@
     "title": "About Us",
     "subTitle": "Get to Know Ekstrem Packaging",
     "contactInformation": "Contact Information",
-    "companyName": "Company Name",
-    "web": "Web"
+    "additionalInfo": "At Ekstrem Packaging, we are committed to continuous improvement and innovation in the paper packaging industry. We strive to exceed customer expectations through quality products, reliable service, and sustainable practices. Our dedicated team works diligently to provide solutions that are not only effective but also environmentally responsible, contributing to a greener future.",
+    "logoAlt": "Ekstrem Packaging Detailed Logo",
+    "companyNameLabel": "Company Name",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "faxLabel": "Fax",
+    "emailLabel": "Email",
+    "webLabel": "Web"
+  },
+  "FeaturesSection": {
+    "mainTitle": "Our Prominent Features",
+    "subTitle": "Why Ekstrem Packaging?",
+    "advancedInfrastructureTitle": "Our Advanced Production Infrastructure",
+    "advancedInfrastructureDescription": "We guarantee high-volume and quality production with our state-of-the-art machinery park and automation systems. Our facility is supported by extensive production and warehousing areas.",
+    "features": {
+      "peCoating": {
+        "name": "High-Capacity PE Coating",
+        "description": "Monthly production capacity of 3000 tons of polyethylene coating and raw material with 2 machines."
+      },
+      "grammageRange": {
+        "name": "Wide Grammage Range",
+        "description": "Raw material production in every grammage and size between 150 and 350 GSM."
+      },
+      "certifiedProduction": {
+        "name": "Certified Production and Standards",
+        "description": "We produce in international norms, compliant with FSC-PEFC certifications and BRC food safety standards."
+      },
+      "standardCompatibility": {
+        "name": "Standard Compatibility and Ease of Use",
+        "description": "Ekstrem Cup products are compatible with all standard lids on the market. Offers leak-proof, hygienic, and practical use."
+      }
+    },
+    "productionHighlights": {
+      "wideProductRange": {
+        "title": "Wide Product Range",
+        "description": "Producing different size and weighted paper cups from 2.5 oz to 16 oz."
+      },
+      "automationEfficiency": {
+        "title": "Automation and Efficiency",
+        "description": "Automatic counting-packing-boxing and plastic stretching capability."
+      },
+      "highProductionCapacity": {
+        "title": "High Production Capacity",
+        "description": "Almost 8 million cups per day capacity with 75+ paper cup machines."
+      },
+      "modernFacility": {
+        "title": "Modern Facility Infrastructure",
+        "description": "Our total 16,000 m² factory area consists of a 4,000 m² production section and a 12,000 m² warehousing section."
+      }
+    },
+    "imageAltProductionLine": "Ekstrem Packaging Factory Production Line and Machine Detail"
+  },
+  "ProductsPreviewSection": {
+    "mainTitle": "Our Product Categories",
+    "subTitle": "Discover Our Wide Product Range",
+    "description": "We offer quality and eco-friendly packaging for all your needs, from paper cups to bowls, plates to custom solutions.",
+    "categories": {
+      "cups": {
+        "name": "Paper Cups",
+        "description": "Eco-friendly paper cups in various sizes, ideal for coffee, tea, and cold beverages.",
+        "alt": "Paper Cups Category"
+      },
+      "bowls": {
+        "name": "Paper Bowls",
+        "description": "Practical and stylish paper bowls for ice cream, soup, noodles, and other foods.",
+        "alt": "Paper Bowls Category"
+      },
+      "plates": {
+        "name": "Paper Plates",
+        "description": "Natural and durable paper plates in different sizes, suitable for all kinds of meals.",
+        "alt": "Paper Plates Category"
+      }
+    },
+    "viewDetails": "View Details",
+    "viewAllProducts": "Browse All Our Products"
+  },
+  "QualityAndSustainabilitySection": {
+    "mainTitle": "Our Quality and Assurance",
+    "subTitle": "Our Sustainability and Standards",
+    "intro": "We are committed to providing our customers with the highest quality, safe, and environmentally friendly products. Our production processes are supported by internationally recognized standards and certifications.",
+    "productFeaturesTitle": "Our Product Features",
+    "imageAltQualityControl": "Ekstrem Cup Quality Control",
+    "certificationsTitle": "Our International Certifications",
+    "certificationsIntro": "Our quality and reliability standards are registered with internationally valid certifications.",
+    "qualityPoints": {
+      "hygienic": {
+        "title": "Hygienic and Food Safe",
+        "description": "Our Ekstrem Cup products are hygienic, practical, and economical solutions that are perfectly safe for contact with food."
+      },
+      "leakProof": {
+        "title": "High Quality and Leak-Proof",
+        "description": "Our products are made with high-quality materials and are guaranteed to be leak-proof, offering a reliable user experience."
+      },
+      "ecoFriendly": {
+        "title": "Environmentally Friendly Production",
+        "description": "Ekstrem Cup is produced according to standards that do not harm the environment. We are working towards a sustainable future."
+      }
+    },
+    "certifications": {
+      "fsc": {
+        "name": "FSC-PEFC Certified",
+        "description": "We use FSC and PEFC certified materials, promoting responsible use of forest resources."
+      },
+      "brc": {
+        "name": "BRC Standard Production",
+        "description": "We manufacture under food safety management systems compliant with BRC Global Standards."
+      }
+    }
+  },
+  "ExportMapSection": {
+    "mainTitle": "Our Global Market",
+    "subTitle": "Worldwide Export",
+    "description": "We deliver our products to customers all over the world, representing our quality in the international arena.",
+    "mapNote": {
+      "beforeSpan": "Countries marked with",
+      "afterSpan": "on the map are the main regions we export to."
+    },
+    "exportedCountriesTitle": "Exported Countries",
+    "countryNameTooltip": "Country Name",
+    "mapAriaLabel": "World map showing countries Ekstrem Packaging exports to"
+  },
+  "Metadata": {
+    "titleBase": "Ekstrem Packaging"
+  },
+  "PrivacyPolicyPage": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: May 17, 2025"
+  },
+  "TermsOfServicePage": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated: May 17, 2025"
+  },
+  "PaperCupsPage": {
+    "metaTitle": "Paper Cups - Ekstrem Packaging",
+    "metaDescription": "High-quality, customizable paper cups for hot and cold beverages by Ekstrem Packaging. Discover our range.",
+    "title": "PAPER CUPS",
+    "description": "According to your needs, we produce natural and eco-friendly paper cups, ideal for coffee, tea, or cold drinks, by combining polyethylene coated or 100% recyclable barrier papers with elegant designs.",
+    "specsTitle": "Cup Technical Specifications",
+    "visualizationsTitle": "Cup Size Visualizations",
+    "ctaButtonText": "Order Cups & Get a Quote"
+  },
+  "PaperBowlsPage": {
+    "metaTitle": "Paper Bowls - Ekstrem Packaging",
+    "metaDescription": "Eco-friendly and versatile paper bowls for ice cream, soup, noodles, and more from Ekstrem Packaging.",
+    "title": "PAPER BOWLS",
+    "descriptionLine1": "In addition to paper cups, we produce eco-friendly paper bowls in various sizes for ice cream, soup, noodles, or other products.",
+    "descriptionLine2": "As well as paper cups, we are producing eco-friendly paper bowls with various sizes for ice cream, soup, noodle or for others.",
+    "specsTitle": "Bowl Technical Specifications",
+    "visualizationsTitle": "Bowl Size Visualizations",
+    "ctaButtonText": "Order Bowls & Get a Quote"
+  },
+  "PaperPlatesPage": {
+    "metaTitle": "Paper Plates - Ekstrem Packaging",
+    "metaDescription": "Practical, stylish, and eco-friendly paper plates for all types of meals, by Ekstrem Packaging.",
+    "title": "PAPER PLATES",
+    "descriptionLine1": "You can make both a practical and stylish presentation with our paper plates. They adapt to all kinds of meals with different size options. Thanks to their natural and durable structure, you can safely use our environmentally friendly products.",
+    "descriptionLine2": "You can make a practical and stylish presentation with our paper plates. It adapts to all kinds of meals with different size options. Thanks to its natural and durable structure, you can safely use our environmentally friendly products.",
+    "visualizationsTitle": "Plate Size Visualizations",
+    "ctaButtonText": "Order Plates & Get a Quote"
+  },
+  "ProductPageShared": {
+    "tableHeaderProduct": "Product",
+    "tableHeaderBottomDiameter": "Bottom Dia. (mm)",
+    "tableHeaderTopDiameter": "Top Dia. (mm)",
+    "tableHeaderHeight": "Height (mm)"
   }
 }

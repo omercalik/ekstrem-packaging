@@ -1,4 +1,4 @@
-// components/ExportMapSection.jsx
+// File: omercalik/ekstrem-packaging/ekstrem-packaging-e487f92652d54e82cd3d7a93d73c5f07d5be1b0b/components/ExportMapSection.jsx
 "use client";
 
 import React from "react";
@@ -13,17 +13,16 @@ import { useTranslations, useLocale } from "next-intl";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
-// countries prop expects: [{ id: "de", tr: "Almanya", en: "Germany" }, ...]
 const ExportMapSection = ({ countries }) => {
   const t = useTranslations("ExportMapSection");
-  const locale = useLocale();
+  const locale = useLocale(); // Gets the current locale ('en' or 'tr')
 
   const countryList = Array.isArray(countries) ? countries : [];
 
-  const highlightedColor = "#F37021";
-  const defaultColor = "#E5E7EB";
-  const strokeColor = "#FFFFFF";
-  const listTextColor = "text-cyan-700";
+  const highlightedColor = "#F37021"; // brandOrange
+  const defaultColor = "#E5E7EB"; // A light gray, consider slate-200 or similar
+  const strokeColor = "#FFFFFF"; // White
+  const listTextColor = "text-cyan-700"; // brandBlue-darker perhaps
 
   return (
     <section className="bg-slate-50 py-16 sm:py-24">
@@ -48,7 +47,7 @@ const ExportMapSection = ({ countries }) => {
             scale: 140,
           }}
           style={{ width: "100%", height: "100%" }}
-          aria-label={t("mapAriaLabel") || "World map showing export countries"} // Add mapAriaLabel to messages
+          aria-label={t("mapAriaLabel") || "World map showing export countries"}
         >
           <Sphere stroke="#CBD5E1" strokeWidth={0.5} id="sphere" />
           <Graticule stroke="#CBD5E1" strokeWidth={0.5} />
@@ -56,13 +55,14 @@ const ExportMapSection = ({ countries }) => {
             {({ geographies }) =>
               geographies.map((geo) => {
                 const countryNameFromMap = geo.properties.name;
-                const isExportCountry = countryList.some(
+                const matchedCountry = countryList.find(
                   (countryObj) =>
                     countryNameFromMap &&
                     countryObj.en &&
                     countryNameFromMap.toLowerCase() ===
-                      countryObj.en.toLowerCase() // Match based on English name from map data
+                      countryObj.en.toLowerCase()
                 );
+                const isExportCountry = Boolean(matchedCountry);
 
                 return (
                   <Geography
@@ -74,25 +74,20 @@ const ExportMapSection = ({ countries }) => {
                     style={{
                       default: { outline: "none" },
                       hover: {
-                        fill: isExportCountry ? "#D95F1A" : "#CFD8DC",
+                        fill: isExportCountry ? "#D95F1A" : "#CFD8DC", // brandOrange-dark or slate-300
                         outline: "none",
                         cursor: "pointer",
                       },
                       pressed: {
-                        fill: isExportCountry ? "#BF5415" : "#B0BEC5",
+                        fill: isExportCountry ? "#BF5415" : "#B0BEC5", // brandOrange-darker or slate-400
                         outline: "none",
                       },
                     }}
-                    aria-label={countryNameFromMap} // Use the name from map data for ARIA, tooltip shows localized
+                    aria-label={countryNameFromMap}
                   >
-                    {/* Tooltip can show localized name if available */}
                     <title>
                       {isExportCountry
-                        ? countryList.find(
-                            (c) =>
-                              c.en.toLowerCase() ===
-                              countryNameFromMap.toLowerCase()
-                          )?.[locale] || countryNameFromMap
+                        ? matchedCountry[locale] || matchedCountry.en // Show localized name in tooltip, fallback to English
                         : countryNameFromMap}
                     </title>
                   </Geography>
@@ -106,13 +101,12 @@ const ExportMapSection = ({ countries }) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mt-8 text-left md:text-center">
           <p className="text-sm text-slate-500 text-center mb-6">
-            {t("mapNote.beforeSpan")} {/* "Countries marked with" */}
+            {t("mapNote.beforeSpan")}
             <span style={{ color: highlightedColor, fontWeight: "bold" }}>
               {" "}
               ●{" "}
             </span>
-            {t("mapNote.afterSpan")}{" "}
-            {/* "on the map are the main regions we export to." */}
+            {t("mapNote.afterSpan")}
           </p>
           {countryList && countryList.length > 0 && (
             <div>
@@ -121,19 +115,19 @@ const ExportMapSection = ({ countries }) => {
               >
                 {t("exportedCountriesTitle")}
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-2">
                 {countryList
                   .slice()
                   .sort((a, b) =>
                     (a[locale] || a.en).localeCompare(b[locale] || b.en, locale)
-                  ) // Sort by localized name
+                  )
                   .map((country) => (
                     <p
-                      key={country.id || country.en}
-                      className={`${listTextColor} text-sm`}
+                      key={country.id} // Use the unique ID (ISO code) as key
+                      className={`${listTextColor} text-sm text-center md:text-left`} // Centered on small, left on medium+
                     >
                       {country[locale] || country.en}{" "}
-                      {locale !== "en" && country.en ? ` / ${country.en}` : ""}{" "}
+                      {/* MODIFIED: Show only localized name or English fallback */}
                     </p>
                   ))}
               </div>

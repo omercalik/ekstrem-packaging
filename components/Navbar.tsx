@@ -20,17 +20,14 @@ export default function Navbar() {
     { href: "/#contact", labelKey: "contact" },
   ];
 
-  // Helper to construct localized hrefs
   const getLocalizedHref = (href: string) => {
     if (href.startsWith("/#")) {
-      // Anchor link on the current (assumed home) page
       return `/${locale}${href}`;
     }
     if (href.startsWith("/")) {
-      // Internal page link
       return `/${locale}${href}`;
     }
-    return href; // External link or already localized
+    return href;
   };
 
   return (
@@ -38,7 +35,6 @@ export default function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            {/* Link to the localized homepage */}
             <Link
               href={`/${locale}`}
               className="text-2xl font-bold text-orange-500"
@@ -63,12 +59,6 @@ export default function Navbar() {
                 {t(link.labelKey)}
               </Link>
             ))}
-            <Link
-              href={getLocalizedHref("/#quote")}
-              className="ml-2 rounded-md bg-orange-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-            >
-              {t("getAQuote")}
-            </Link>
             <div className="ml-2">
               {" "}
               {/* Added margin for switcher */}
@@ -128,7 +118,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
@@ -142,13 +131,6 @@ export default function Navbar() {
                 {t(link.labelKey)}
               </Link>
             ))}
-            <Link
-              href={getLocalizedHref("/#quote")}
-              onClick={() => setIsOpen(false)}
-              className="mt-1 block w-full rounded-md bg-orange-500 px-4 py-2 text-center text-base font-medium text-white shadow-sm hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-            >
-              {t("getAQuote")}
-            </Link>
           </div>
         </div>
       )}

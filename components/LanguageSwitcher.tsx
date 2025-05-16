@@ -1,33 +1,21 @@
-// components/LanguageSwitcher.tsx
+// File: omercalik/ekstrem-packaging/ekstrem-packaging-e487f92652d54e82cd3d7a93d73c5f07d5be1b0b/components/LanguageSwitcher.tsx
 "use client";
 
 import { useLocale } from "next-intl";
-import { useRouter, usePathname } from "next/navigation";
-import { locales, defaultLocale } from "@/i18n"; // Ensure this path is correct
+// Import from your next-intl navigation setup
+import { useRouter, usePathname } from "@/i18n/navigation";
+// Import unified locale config from routing.ts
+import { locales } from "@/i18n/routing";
 
 export default function LanguageSwitcher() {
-  const currentLocale = useLocale();
+  const currentLocale = useLocale(); // Gets the currently active locale (e.g., "en" or "tr")
   const router = useRouter();
-  const pathname = usePathname();
+  const pathname = usePathname(); // This will be the path *without* the locale prefix (e.g., "/about")
 
   const handleChange = (newLocale: string) => {
-    // Pathname includes the current locale, e.g., /en/about or just /about if default locale isn't prefixed
-    // We need to construct the new path carefully
-    let newPathWithoutLocale = pathname;
-
-    if (pathname.startsWith(`/${currentLocale}`)) {
-      newPathWithoutLocale =
-        pathname.substring(`/${currentLocale}`.length) || "/";
-    }
-
-    // For the default locale, we might want to navigate to the root path if 'as-needed' prefixing is used
-    const newPath =
-      newLocale === defaultLocale && newPathWithoutLocale === "/"
-        ? "/"
-        : `/${newLocale}${newPathWithoutLocale}`;
-
-    router.replace(newPath);
-    // router.refresh(); // Consider if refresh is always needed or if Next.js handles updates well
+    // next-intl's router.replace is designed for locale switching.
+    // It takes the current pathname (without locale) and the new locale.
+    router.replace(pathname, { locale: newLocale });
   };
 
   return (
@@ -43,7 +31,12 @@ export default function LanguageSwitcher() {
       >
         {locales.map((loc) => (
           <option key={loc} value={loc}>
-            {loc === "en" ? "English" : "Türkçe"}
+            {/* You can create a more sophisticated way to display language names if you add more locales */}
+            {loc === "en"
+              ? "English"
+              : loc === "tr"
+              ? "Türkçe"
+              : loc?.toUpperCase()}
           </option>
         ))}
       </select>

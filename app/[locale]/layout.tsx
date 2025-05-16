@@ -1,20 +1,21 @@
-// app/[locale]/layout.tsx
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-// No need to re-declare NextIntlClientProvider here, it's in the root app/layout.tsx
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
-export default async function LocaleLayout({
+export default function LocaleSpecificLayout({
   children,
-  params: { locale }, // The specific locale for this layout instance
+  params: { locale },
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  const messages = useMessages();
+
   return (
-    <>
-      <Navbar /> {/* Client component, will use useLocale() */}
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <Navbar />
       <main className="flex-grow">{children}</main>
-      <Footer locale={locale} /> {/* Server component, pass locale */}
-    </>
+      <Footer locale={locale} />{" "}
+    </NextIntlClientProvider>
   );
 }

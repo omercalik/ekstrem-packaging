@@ -68,13 +68,10 @@ export default async function QualityAndSustainabilitySection({
     { id: "ecoFriendly", icon: <EcoFriendlyIcon /> },
   ];
 
-  const certificationsData = ["fsc", "brc"]; // Keys for certifications
+  const certificationsData = ["fsc", "brc"];
 
   return (
-    <section
-      id={locale === "tr" ? "surdurulebilirlik" : "sustainability"}
-      className="bg-white py-16 sm:py-24"
-    >
+    <section id={"sustainability"} className="bg-white py-16 sm:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-base font-semibold uppercase tracking-wider text-orange-500">
@@ -121,7 +118,7 @@ export default async function QualityAndSustainabilitySection({
           <div className="flex justify-center">
             <div className="relative w-full max-w-md overflow-hidden rounded-xl shadow-2xl">
               <Image
-                src="/images/company/worker_inspection.jpg" // Assumed from previous steps
+                src="/certification.jpg"
                 alt={t("imageAltQualityControl")}
                 width={500}
                 height={600}
@@ -146,8 +143,6 @@ export default async function QualityAndSustainabilitySection({
                 key={certKey}
                 className="p-6 bg-slate-50 rounded-lg shadow-lg"
               >
-                {/* Optional: Add actual logo images here if available */}
-                {/* <Image src={`/images/company/${certKey}_logo.png`} alt={t(`certifications.${certKey}.name`)} width={100} height={50} className="mx-auto mb-4"/> */}
                 <h4 className="text-xl font-semibold text-slate-800 mb-2">
                   {t(`certifications.${certKey}.name`)}
                 </h4>

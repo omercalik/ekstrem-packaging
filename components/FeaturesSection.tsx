@@ -86,10 +86,7 @@ export default async function FeaturesSection({ locale }: { locale: string }) {
   ];
 
   return (
-    <section
-      id={locale === "tr" ? "kabiliyetlerimiz" : "our-capabilities"}
-      className="bg-white py-16 sm:py-24"
-    >
+    <section id={"our-capabilities"} className="bg-white py-16 sm:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base font-semibold uppercase tracking-wider text-orange-500">
@@ -132,7 +129,7 @@ export default async function FeaturesSection({ locale }: { locale: string }) {
             <div className="w-full md:w-1/2">
               <div className="relative overflow-hidden rounded-xl shadow-2xl h-96 md:h-[500px]">
                 <Image
-                  src="/images/company/production_line.jpg" // Assumed this image exists from previous steps
+                  src="/production.jpg" // Assumed this image exists from previous steps
                   alt={t("imageAltProductionLine")}
                   layout="fill"
                   objectFit="cover"
