@@ -1,18 +1,22 @@
-// File: app/[locale]/products/bowls/page.tsx
+// File: omercalik/ekstrem-packaging/ekstrem-packaging-e487f92652d54e82cd3d7a93d73c5f07d5be1b0b/app/[locale]/products/bowls/page.tsx
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation"; // Use next-intl's Link
+import { Link } from "@/i18n/navigation";
 import {
   productSpecificationsBowls,
   bowlLineArt,
 } from "@/app/data/productData";
 import { Metadata } from "next";
 
+interface ProductPageMetadataProps {
+  params: Promise<{ locale: string }>;
+}
+
 export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
+  params,
+}: ProductPageMetadataProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
   const t = await getTranslations({ locale, namespace: "PaperBowlsPage" });
   const tRoot = await getTranslations({ locale, namespace: "Metadata" });
   return {
@@ -40,6 +44,13 @@ export default async function PaperBowlsPage() {
             <p className="mt-4 text-lg text-slate-700">
               {t("descriptionLine1")}
             </p>
+            {/* Conditionally render descriptionLine2 if it exists and is different, or always if preferred */}
+            {t("descriptionLine2") &&
+              t("descriptionLine2") !== t("descriptionLine1") && (
+                <p className="mt-3 text-lg text-slate-700">
+                  {t("descriptionLine2")}
+                </p>
+              )}
           </div>
 
           <div className="mt-8 flow-root">
@@ -124,7 +135,7 @@ export default async function PaperBowlsPage() {
                     />
                   </div>
                   <p className="mt-3 text-center text-sm font-semibold text-slate-700">
-                    {product.sizeLabel}{" "}
+                    {product.sizeLabel}
                   </p>
                 </div>
               ))}

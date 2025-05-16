@@ -1,15 +1,19 @@
+// File: omercalik/ekstrem-packaging/ekstrem-packaging-e487f92652d54e82cd3d7a93d73c5f07d5be1b0b/app/[locale]/products/cups/page.tsx
 import Image from "next/image";
-import Link from "next/link";
-
+import { getLocale, getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { productSpecificationsCups, cupLineArt } from "@/app/data/productData";
 import { Metadata } from "next";
-import { getLocale, getTranslations } from "next-intl/server";
+
+interface ProductPageMetadataProps {
+  params: Promise<{ locale: string }>;
+}
 
 export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
+  params,
+}: ProductPageMetadataProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
   const t = await getTranslations({ locale, namespace: "PaperCupsPage" });
   const tRoot = await getTranslations({ locale, namespace: "Metadata" });
   return {
@@ -25,10 +29,6 @@ export default async function PaperCupsPage() {
     locale,
     namespace: "ProductPageShared",
   });
-
-  // Note: For full localization, product.name, product.altText, and product.sizeLabel
-  // from productData.ts might also need to be translation keys.
-  // For now, they are used as is from the data file.
 
   return (
     <main className="bg-white">
@@ -81,8 +81,7 @@ export default async function PaperCupsPage() {
                       {productSpecificationsCups.map((product) => (
                         <tr key={product.name}>
                           <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-slate-900 sm:pl-6">
-                            {product.name}{" "}
-                            {/* Consider localizing product.name if needed */}
+                            {product.name}
                           </td>
                           <td className="whitespace-nowrap px-3 py-4 text-sm text-slate-600">
                             {product.bottomDiameter}
@@ -118,27 +117,17 @@ export default async function PaperCupsPage() {
                   >
                     <Image
                       src={product.imageUrl}
-                      alt={product.altText} // Consider localizing product.altText
+                      alt={product.altText}
                       fill
                       className="object-contain transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
                   <p className="mt-3 text-center text-sm font-semibold text-slate-700">
-                    {product.sizeLabel}{" "}
-                    {/* Consider localizing product.sizeLabel */}
+                    {product.sizeLabel}
                   </p>
                 </div>
               ))}
             </div>
-          </div>
-
-          <div className="mt-16 text-center border-t border-slate-200 pt-10">
-            <Link
-              href="/#contact" // This will be correctly prefixed by next-intl's Link
-              className="inline-block rounded-md bg-orange-500 px-8 py-3 text-base font-medium text-white shadow-md transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-            >
-              {t("ctaButtonText")}
-            </Link>
           </div>
         </section>
       </div>

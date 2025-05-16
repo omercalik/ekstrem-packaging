@@ -12,7 +12,7 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname(); // This will be the path *without* the locale prefix (e.g., "/about")
 
-  const handleChange = (newLocale: string) => {
+  const handleChange = (newLocale) => {
     // next-intl's router.replace is designed for locale switching.
     // It takes the current pathname (without locale) and the new locale.
     router.replace(pathname, { locale: newLocale });

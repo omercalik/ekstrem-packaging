@@ -1,11 +1,13 @@
-// app/[locale]/page.tsx
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server"; // Added getTranslations
+import { Metadata } from "next"; // Import Metadata type
+
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import ProductsPreviewSection from "@/components/ProductsPreviewSection";
 import QualityAndSustainabilitySection from "@/components/QualityAndSustainabilitySection";
 import ExportMapSection from "@/components/ExportMapSection";
 
+// Data for exportCountries (as previously defined)
 const exportCountries = [
   { id: "DE", en: "Germany", tr: "Almanya" },
   { id: "US", en: "United States of America", tr: "Amerika" },
@@ -27,18 +29,34 @@ const exportCountries = [
   { id: "TN", en: "Tunisia", tr: "Tunus" },
 ];
 
+interface HomePageMetadataProps {
+  params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({
+  params,
+}: HomePageMetadataProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
+
+  const t = await getTranslations({ locale, namespace: "HomePage" });
+  const tRoot = await getTranslations({ locale, namespace: "Metadata" });
+  return {
+    title: `${t("metaTitle")} | ${tRoot("titleBase")}`,
+    description: t("metaDescription"),
+  };
+}
+
 export default async function HomePage() {
   const locale = await getLocale();
 
   return (
-    <div className="flex min-h-screen flex-col bg-white">
-      <main className="flex-grow">
-        <HeroSection locale={locale} />
-        <FeaturesSection locale={locale} />
-        <ProductsPreviewSection locale={locale} />
-        <QualityAndSustainabilitySection locale={locale} />
-        <ExportMapSection countries={exportCountries} />{" "}
-      </main>
-    </div>
+    <main className="flex-grow">
+      <HeroSection locale={locale} />
+      <FeaturesSection locale={locale} />
+      <ProductsPreviewSection locale={locale} />
+      <QualityAndSustainabilitySection locale={locale} />
+      <ExportMapSection countries={exportCountries} />
+    </main>
   );
 }

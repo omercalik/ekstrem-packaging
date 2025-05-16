@@ -1,21 +1,21 @@
-// File: app/[locale]/terms/page.tsx
+// File: omercalik/ekstrem-packaging/ekstrem-packaging-e487f92652d54e82cd3d7a93d73c5f07d5be1b0b/app/[locale]/terms/page.tsx
 import { getLocale, getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 
-// Navbar and Footer are usually in the layout, so not imported here directly
-// import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
+interface LegalPageMetadataProps {
+  params: Promise<{ locale: string }>;
+}
 
 export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
+  params,
+}: LegalPageMetadataProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
   const t = await getTranslations({ locale, namespace: "TermsOfServicePage" });
-  const tRoot = await getTranslations({ locale, namespace: "Metadata" }); // Assuming Metadata.titleBase exists
+  const tRoot = await getTranslations({ locale, namespace: "Metadata" });
   return {
     title: `${t("title")} | ${tRoot("titleBase")}`,
-    description: `Terms of Service for Ekstrem Packaging. Placeholder content.`, // Generic description
+    description: `Terms of Service for Ekstrem Packaging. Placeholder content.`,
   };
 }
 

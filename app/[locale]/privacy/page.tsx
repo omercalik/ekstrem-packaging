@@ -1,21 +1,21 @@
-// File: app/[locale]/privacy/page.tsx
+// File: omercalik/ekstrem-packaging/ekstrem-packaging-e487f92652d54e82cd3d7a93d73c5f07d5be1b0b/app/[locale]/privacy/page.tsx
 import { getLocale, getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 
-// Navbar and Footer are usually in the layout, so not imported here directly
-// import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
+interface LegalPageMetadataProps {
+  params: Promise<{ locale: string }>;
+}
 
 export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
+  params,
+}: LegalPageMetadataProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
   const t = await getTranslations({ locale, namespace: "PrivacyPolicyPage" });
-  const tRoot = await getTranslations({ locale, namespace: "Metadata" }); // Assuming Metadata.titleBase exists
+  const tRoot = await getTranslations({ locale, namespace: "Metadata" });
   return {
     title: `${t("title")} | ${tRoot("titleBase")}`,
-    description: `Privacy Policy for Ekstrem Packaging. Placeholder content.`, // Generic description
+    description: `Privacy Policy for Ekstrem Packaging. Placeholder content.`,
   };
 }
 
@@ -23,14 +23,7 @@ export default async function PrivacyPolicyPage() {
   const locale = await getLocale();
   const t = await getTranslations({ locale, namespace: "PrivacyPolicyPage" });
 
-  // IMPORTANT: The content below is extremely generic placeholder text.
-  // It is NOT a real Privacy Policy and MUST be replaced by a legally compliant one
-  // drafted by a qualified legal professional.
-
   return (
-    // Assuming Navbar and Footer are handled by app/[locale]/layout.tsx
-    // <div className="flex min-h-screen flex-col bg-white">
-    //   <Navbar />
     <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <article className="prose lg:prose-xl max-w-none text-slate-700">
         <h1>{t("title")}</h1>
@@ -101,7 +94,5 @@ export default async function PrivacyPolicyPage() {
         </p>
       </article>
     </main>
-    //   <Footer locale={locale} />
-    // </div>
   );
 }
