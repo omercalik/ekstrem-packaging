@@ -1,26 +1,27 @@
+/* app/globals.css */
+
+/* Import Tailwind's base, components, and utilities.
+   The exact import might vary slightly based on final v4 docs,
+   but this is the common pattern. */
 @import "tailwindcss";
 
+/* Define your custom properties (CSS Variables) at the :root level */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-brand-orange: #f37021;
+  --color-brand-orange-light: #f68b4d; /* For lighter shades if needed */
+  --color-brand-orange-dark: #d85c1b; /* For darker shades, e.g., hover states */
+
+  --color-brand-blue: #005a70;
+  --color-brand-blue-light: #00738c;
+  --color-brand-blue-dark: #004153;
+
+  /* You can add any other global CSS variables here */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Your other global styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply text-slate-700 antialiased; /* Example: still using @apply for composing utilities */
 }
+
+/* You generally won't use @theme for simple color definitions in v4.
+   @theme is more for configuring variants, core plugins, etc. */

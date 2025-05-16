@@ -1,0 +1,155 @@
+{
+  "Navbar": {
+    "products": "Ürünler",
+    "ourCapabilities": "Kabiliyetlerimiz",
+    "sustainability": "Sürdürülebilirlik",
+    "aboutUs": "Hakkımızda",
+    "contact": "İletişim",
+    "getAQuote": "Teklif Alın"
+  },
+  "HeroSection": {
+    "titleMain": "Ekstrem",
+    "titleSpan": "Packaging",
+    "subtitle": "Kaliteli, hijyenik, pratik, ekonomik ve çevre dostu kağıt bardak çözümleriyle markanıza değer katın. Ürünlerimiz gıda ile temasa uygundur.",
+    "groupCompany": "Trend Kağıtçılık Ürünleri, Doğu Karadeniz Toptan Gıda Pazarlama firmasının grup şirketidir.",
+    "experience": "Sektörde 42 yıllık pazarlama ve 10 yılı aşkın üretim tecrübesiyle, Ankara'da bulunan 16.000 m² modern kapalı tesisimizde, 120'den fazla özverili çalışanımızla hizmet veriyoruz.",
+    "production": "Son teknoloji makina parkuru ile hijyen ve kalite kurallarını ön planda tutarak müşterilerimize yüksek hacim, kalite ve uygun fiyat sunmaktayız.",
+    "brand": "EKSTREM CUP markamız altında, Avrupa standartlarına uygun, birçok farklı ölçü ve gramajda, özgün ve size özel tasarım imkanlarıyla sızdırmaz kağıt bardaklar üretiyoruz.",
+    "discoverProducts": "Ürünlerimizi Keşfedin",
+    "moreInformation": "Daha Fazla Bilgi"
+  },
+  "CtaSection": {
+    "title": "Değişime Hazır mısınız?",
+    "description": "Sürdürülebilir Ekstrem Packaging kağıt bardaklarını seçen işletmelere ve bireylere katılın. Özel bir fiyat teklifi alın veya çevre dostu çözümlerimiz hakkında bugün daha fazla bilgi edinin.",
+    "requestAQuote": "Teklif Talep Edin"
+  },
+  "Footer": {
+    "tagline": "Kaliteli, hijyenik ve çevre dostu kağıt ambalaj çözümleri. Markanıza değer katmak için buradayız.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contactUs": "Bize Ulaşın",
+    "address": "Adres",
+    "phone": "Telefon",
+    "fax": "Fax",
+    "email": "Email",
+    "allRightsReserved": "Tüm hakları saklıdır",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfService": "Kullanım Şartları"
+  },
+  "AboutPage": {
+    "pageTitle": "Hakkımızda - Ekstrem Packaging",
+    "pageDescription": "Ekstrem Packaging'in hikayesi, misyonu ve değerleri. Kaliteli ve çevre dostu kağıt ambalaj çözümlerindeki tecrübemizi keşfedin.",
+    "title": "Hakkımızda",
+    "subTitle": "Ekstrem Packaging'i Tanıyın",
+    "contactInformation": "İletişim Bilgilerimiz",
+    "companyName": "Firma Adı",
+    "web": "Web"
+  },
+  "FeaturesSection": {
+    "mainTitle": "Our Prominent Features",
+    "subTitle": "Why Ekstrem Packaging?",
+    "advancedInfrastructureTitle": "Our Advanced Production Infrastructure",
+    "advancedInfrastructureDescription": "We guarantee high-volume and quality production with our state-of-the-art machinery park and automation systems. Our facility is supported by extensive production and warehousing areas.",
+    "features": {
+      "peCoating": {
+        "name": "High-Capacity PE Coating",
+        "description": "Monthly production capacity of 3000 tons of polyethylene coating and raw material with 2 machines."
+      },
+      "grammageRange": {
+        "name": "Wide Grammage Range",
+        "description": "Raw material production in every grammage and size between 150 and 350 GSM."
+      },
+      "certifiedProduction": {
+        "name": "Certified Production and Standards",
+        "description": "We produce in international norms, compliant with FSC-PEFC certifications and BRC food safety standards."
+      },
+      "standardCompatibility": {
+        "name": "Standard Compatibility and Ease of Use",
+        "description": "Ekstrem Cup products are compatible with all standard lids on the market. Offers leak-proof, hygienic, and practical use."
+      }
+    },
+    "productionHighlights": {
+      "wideProductRange": {
+        "title": "Wide Product Range",
+        "description": "Producing different size and weighted paper cups from 2.5 oz to 16 oz."
+      },
+      "automationEfficiency": {
+        "title": "Automation and Efficiency",
+        "description": "Automatic counting-packing-boxing and plastic stretching capability."
+      },
+      "highProductionCapacity": {
+        "title": "High Production Capacity",
+        "description": "Almost 8 million cups per day capacity with 75+ paper cup machines."
+      },
+      "modernFacility": {
+        "title": "Modern Facility Infrastructure",
+        "description": "Our total 16,000 m² factory area consists of a 4,000 m² production section and a 12,000 m² warehousing section."
+      }
+    },
+    "imageAltProductionLine": "Ekstrem Packaging Factory Production Line and Machine Detail"
+  },
+  "ProductsPreviewSection": {
+    "mainTitle": "Our Product Categories",
+    "subTitle": "Discover Our Wide Product Range",
+    "description": "We offer quality and eco-friendly packaging for all your needs, from paper cups to bowls, plates to custom solutions.",
+    "categories": {
+      "cups": {
+        "name": "Paper Cups",
+        "description": "Eco-friendly paper cups in various sizes, ideal for coffee, tea, and cold beverages.",
+        "alt": "Paper Cups Category"
+      },
+      "bowls": {
+        "name": "Paper Bowls",
+        "description": "Practical and stylish paper bowls for ice cream, soup, noodles, and other foods.",
+        "alt": "Paper Bowls Category"
+      },
+      "plates": {
+        "name": "Paper Plates",
+        "description": "Natural and durable paper plates in different sizes, suitable for all kinds of meals.",
+        "alt": "Paper Plates Category"
+      }
+    },
+    "viewDetails": "View Details",
+    "viewAllProducts": "Browse All Our Products"
+  },
+  "QualityAndSustainabilitySection": {
+    "mainTitle": "Our Quality and Assurance",
+    "subTitle": "Our Sustainability and Standards",
+    "intro": "We are committed to providing our customers with the highest quality, safe, and environmentally friendly products. Our production processes are supported by internationally recognized standards and certifications.",
+    "productFeaturesTitle": "Our Product Features",
+    "imageAltQualityControl": "Ekstrem Cup Quality Control",
+    "certificationsTitle": "Our International Certifications",
+    "certificationsIntro": "Our quality and reliability standards are registered with internationally valid certifications.",
+    "qualityPoints": {
+      "hygienic": {
+        "title": "Hygienic and Food Safe",
+        "description": "Our Ekstrem Cup products are hygienic, practical, and economical solutions that are perfectly safe for contact with food."
+      },
+      "leakProof": {
+        "title": "High Quality and Leak-Proof",
+        "description": "Our products are made with high-quality materials and are guaranteed to be leak-proof, offering a reliable user experience."
+      },
+      "ecoFriendly": {
+        "title": "Environmentally Friendly Production",
+        "description": "Ekstrem Cup is produced according to standards that do not harm the environment. We are working towards a sustainable future."
+      }
+    },
+    "certifications": {
+      "fsc": {
+        "name": "FSC-PEFC Certified",
+        "description": "We use FSC and PEFC certified materials, promoting responsible use of forest resources."
+      },
+      "brc": {
+        "name": "BRC Standard Production",
+        "description": "We manufacture under food safety management systems compliant with BRC Global Standards."
+      }
+    }
+  },
+  "ExportMapSection": {
+    "mainTitle": "Our Global Market",
+    "subTitle": "Worldwide Export",
+    "description": "We deliver our products to customers all over the world, representing our quality in the international arena.",
+    "mapNote": "Countries marked with ● on the map are the main regions we export to.",
+    "exportedCountriesTitle": "Exported Countries",
+    "countryNameTooltip": "Country Name"
+  }
+}

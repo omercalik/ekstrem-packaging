@@ -1,0 +1,47 @@
+{
+  "Navbar": {
+    "products": "Products",
+    "ourCapabilities": "Our Capabilities",
+    "sustainability": "Sustainability",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "getAQuote": "Get a Quote"
+  },
+  "HeroSection": {
+    "titleMain": "Ekstrem",
+    "titleSpan": "Packaging",
+    "subtitle": "Add value to your brand with quality, hygienic, practical, economical, and eco-friendly paper cup solutions. Our products are safe for food contact.",
+    "groupCompany": "Trend Kağıtçılık Ürünleri is a group company of Doğu Karadeniz Toptan Gıda Pazarlama.",
+    "experience": "With 42 years of marketing and over 10 years of production experience, we operate in our 16,000 m² modern indoor facility in Ankara with over 120 employees.",
+    "production": "With our state-of-the-art machinery park, we offer high volume, quality, and competitive prices by prioritizing hygiene and quality rules.",
+    "brand": "Under our EKSTREM CUP brand, we produce leak-proof paper cups in various sizes and weights, conforming to European standards, with unique and custom design options.",
+    "discoverProducts": "Discover Our Products",
+    "moreInformation": "More Information"
+  },
+  "CtaSection": {
+    "title": "Ready to Make the Switch?",
+    "description": "Join businesses and individuals choosing sustainable Ekstrem Packaging paper cups. Get a custom quote or learn more about our eco-friendly solutions today.",
+    "requestAQuote": "Request a Quote"
+  },
+  "Footer": {
+    "tagline": "Quality, hygienic, and eco-friendly paper packaging solutions. We are here to add value to your brand.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "address": "Address",
+    "phone": "Phone",
+    "fax": "Fax",
+    "email": "Email",
+    "allRightsReserved": "All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "AboutPage": {
+    "pageTitle": "About Us - Ekstrem Packaging",
+    "pageDescription": "Discover the story, mission, and values of Ekstrem Packaging. Learn about our experience in quality and eco-friendly paper packaging solutions.",
+    "title": "About Us",
+    "subTitle": "Get to Know Ekstrem Packaging",
+    "contactInformation": "Contact Information",
+    "companyName": "Company Name",
+    "web": "Web"
+  }
+}
