@@ -31,7 +31,7 @@ const companyInfoStatic = {
   fax: "+90 312 278 52 03",
   email: "info@ekstremcup.com",
   website: "https://www.ekstremcup.com",
-  logoUrl: "/images/company/ekstrem_packaging_logo_detail.png",
+  logoUrl: "/logo.jpg",
 };
 
 export default async function AboutPage() {
