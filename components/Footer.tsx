@@ -1,12 +1,10 @@
-// components/Footer.tsx
 import Link from "next/link";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
 const companyContactData = {
-  // Static data that doesn't need translation per se
   legalName: "Trend Kağıtçılık Ürünleri İç ve Dış Tic. Paz. Ltd. Şti.",
-  address: "Bahçekapı Mah. 2464. Sok. No:4/1 Şaşmaz/Etimesgut ANKARA/TURKEY",
+  address: "Susuz Mah. 3783 Cad. No: 5-A Yenimahalle/Ankara/Türkiye",
   phone: "+90 312 278 52 02",
   fax: "+90 312 278 52 03",
   email: "info@ekstremcup.com",
@@ -15,7 +13,7 @@ const companyContactData = {
 
 export default async function Footer({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: "Footer" });
-  const tNav = await getTranslations({ locale, namespace: "Navbar" }); // For reusing nav link translations
+  const tNav = await getTranslations({ locale, namespace: "Navbar" });
 
   const footerNavLinks = [
     { href: "/#products", labelKey: "products" },
@@ -35,7 +33,6 @@ export default async function Footer({ locale }: { locale: string }) {
   };
 
   const creatorName = "Ömer Berkan Çalık";
-  const creatorEmail = "omerbcalik@gmail.com";
 
   return (
     <footer id={"contact"} className="bg-cyan-800 text-cyan-50">
@@ -105,8 +102,8 @@ export default async function Footer({ locale }: { locale: string }) {
 
         <div className="mt-12 border-t border-cyan-700 pt-8 md:flex md:items-center md:justify-between">
           <p className="text-base text-cyan-300 md:order-1 md:mt-0">
-            &copy; {new Date().getFullYear()} {"Ekstrem Packaging"}.{" "}
-            {t("allRightsReserved")}. ({companyContactData.legalName}){" "}
+            &copy; {new Date().getFullYear()} {"TREND KAĞITÇILIK LTD"}.{" "}
+            {t("allRightsReserved")}.{" "}
           </p>
           <div className="mt-4 flex space-x-4 md:mt-0 md:order-2 text-sm">
             <Link
@@ -128,12 +125,6 @@ export default async function Footer({ locale }: { locale: string }) {
           <p className="text-xs text-cyan-400">
             {t("developedBy", { creatorName: creatorName })}
             <br />
-            <a
-              href={`mailto:${creatorEmail}`}
-              className="text-cyan-400 hover:text-orange-400 hover:underline"
-            >
-              {creatorEmail}
-            </a>
           </p>
         </div>
       </div>

@@ -58,7 +58,7 @@ export default async function HeroSection({ locale }: { locale: string }) {
           <div className="flex w-full items-center justify-center md:w-1/2 lg:w-2/5">
             <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
               <Image
-                src="/cup1.jpg" // Make sure this image exists
+                src="/cup1.jpg"
                 alt={t("titleMain") + " " + t("titleSpan")}
                 width={500}
                 height={700}

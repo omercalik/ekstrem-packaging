@@ -7,8 +7,7 @@ import { getTranslations, getLocale } from "next-intl/server";
 // Define an interface for the props structure that generateMetadata *receives*
 // If PageProps truly dictates params is a Promise, reflect that here.
 interface AboutPageMetadataIncomingProps {
-  params: Promise<{ locale: string }>; // <<<<<<<< Type params as a Promise
-  // searchParams?: any; // Add if searchParams are also part of PageProps and used
+  params: Promise<{ locale: string }>;
 }
 
 export async function generateMetadata({
@@ -25,10 +24,9 @@ export async function generateMetadata({
   };
 }
 
-// ... (rest of your AboutPage component, which uses getLocale() and is fine) ...
 const companyInfoStatic = {
-  legalName: "Trend Kağıtçılık Ürünleri İç ve Dış Tic. Paz. Ltd. Şti.",
-  address: "Bahçekapı Mah. 2464. Sok. No:4/1 Şaşmaz/Etimesgut ANKARA/TURKEY",
+  legalName: "TREND KAĞITÇILIK LTD.",
+  address: "Susuz Mah. 3783 Cad. No: 5-A Yenimahalle/Ankara/Türkiye",
   phone: "+90 312 278 52 02",
   fax: "+90 312 278 52 03",
   email: "info@ekstremcup.com",

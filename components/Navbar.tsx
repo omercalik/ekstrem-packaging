@@ -33,19 +33,43 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white/80 shadow-md backdrop-blur-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-24 items-center justify-between">
           <div className="flex items-center">
             <Link
               href={`/${locale}`}
               className="text-2xl font-bold text-orange-500"
             >
               <Image
-                src="/logo.jpg"
+                src="/logo-main.jpg"
                 alt="Ekstrem Packaging Logo"
                 width={150}
                 height={50}
               />
             </Link>
+            <div className="flex items-center ml-8">
+              <Link
+                href={`/${locale}`}
+                className="text-2xl font-bold text-orange-500"
+              >
+                <Image
+                  src="/logo.jpg"
+                  alt="Ekstrem Packaging Logo"
+                  width={200}
+                  height={50}
+                />
+              </Link>
+              <Link
+                href={`/${locale}`}
+                className="text-2xl font-bold text-orange-500"
+              >
+                <Image
+                  src="/logo-cup.jpg"
+                  alt="Ekstrem Packaging Logo"
+                  width={200}
+                  height={50}
+                />
+              </Link>
+            </div>
           </div>
           <div className="hidden md:flex md:items-center md:space-x-1 lg:space-x-2">
             {" "}

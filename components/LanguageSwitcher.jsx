@@ -31,7 +31,6 @@ export default function LanguageSwitcher() {
       >
         {locales.map((loc) => (
           <option key={loc} value={loc}>
-            {/* You can create a more sophisticated way to display language names if you add more locales */}
             {loc === "en"
               ? "English"
               : loc === "tr"
